@@ -20,13 +20,13 @@ exports.up = function(knex) {
     .createTable('projects_resources', table => {
       table
         .integer('project_id')
-        .references('id')
         .notNullable()
+        .references('id')
         .inTable('projects')
       table
         .integer('resource_id')
-        .references('id')
         .notNullable()
+        .references('id')
         .inTable('resources')
       table.primary(['project_id', 'resource_id'])
     })
@@ -37,8 +37,8 @@ exports.up = function(knex) {
       table.boolean('completed').defaultTo(false)
       table
         .integer('project_id')
-        .references('id')
         .notNullable()
+        .references('id')
         .inTable('projects')
     })
 }
