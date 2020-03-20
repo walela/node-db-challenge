@@ -15,7 +15,7 @@ module.exports = {
     },
     pool: {
       afterCreate: (conn, done) => {
-        // runs after a connection is made to the sqlite engine
+        // runs after connection to sqlite
         conn.run('PRAGMA foreign_keys = ON', done) // turn on foreign key enforcement
       }
     }
