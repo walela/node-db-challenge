@@ -38,13 +38,22 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the difference between `Relational Databases` and `SQL`.
+- [x] Explain the difference between `Relational Databases` and `SQL`.
 
-- [ ] Why do tables need a `primary key`?
+A relational database is a type of database that stores and provides access to data points that are related to one another. Relational databases are based on the relational model, an intuitive, straightforward way of representing data in tables. SQL on the other hand is a language for querying
+relational databases.
 
-- [ ] What is the name given to a table column that references the primary key on another table.
+- [x] Why do tables need a `primary key`?
 
-- [ ] What do we need in order to have a _many to many_ relationship between two tables.
+Primary keys make each row in the table unique and identifiable.
+
+- [x] What is the name given to a table column that references the primary key on another table.
+
+Foreign key
+
+- [x] What do we need in order to have a _many to many_ relationship between two tables.
+
+A third table to mediate between the two tables
 
 ## Minimum Viable Product
 
@@ -63,8 +72,8 @@ Complete the following tasks:
   - [x] when adding a `task` the client must provide the `id` of an existing project.
   - [x] for `projects` and `tasks` if no value is provided for the `completed` property, the API should provide a default value of `false`.
 - [x] Build an API with endpoints for:
-  - [ ] adding resources.
-  - [ ] retrieving a list of resources.
+  - [x] adding resources.
+  - [x] retrieving a list of resources.
   - [x] adding projects.
   - [x] retrieving a list of projects.
   - [x] adding tasks.
