@@ -53,7 +53,7 @@ Foreign key
 
 - [x] What do we need in order to have a _many to many_ relationship between two tables.
 
-A third table to mediate between the two tables
+A third(join) table to mediate between the two tables.Each record in a join table includes a match field that contains the value of the primary keys of the two tables it joins. 
 
 ## Minimum Viable Product
 
